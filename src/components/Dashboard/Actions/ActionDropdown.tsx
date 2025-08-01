@@ -35,6 +35,11 @@ const ActionDropdown = ({ student }: { student: Student }) => {
   };
 
   const handleDeleteConfirm = () => {
+    if (!student.id) {
+      message.error("Invalid student ID.");
+      return;
+    }
+
     deleteOne(student.id);
     setIsDeleteModalOpen(false);
   };

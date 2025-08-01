@@ -8,11 +8,3 @@ export interface Student {
   avatar?: string | null;
   phone_num: string;
 }
-
-export interface EditStudent {
-  name: string;
-  phone_num: string;
-  avatar: string;
-  course_enrolled: string;
-  region: string;
-}
