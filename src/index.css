@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+@theme {
+  /* Primary (Blue educational theme) */
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #dceeff;
+  --color-primary-200: #b8deff;
+  --color-primary-300: #8ecbff;
+  --color-primary-400: #5ab3ff;
+  --color-primary-500: #1a8cff;
+  --color-primary-600: #176fd6;
+  --color-primary-700: #1459ad;
+  --color-primary-800: #10458a;
+  --color-primary-900: #0c3266;
+
+  /* Secondary (Green calm) */
+  --color-secondary: #28c76f;
+
+  /* Background & Foreground */
+  --color-background: #f8fafc;
+  --color-foreground: #1f2937;
+
+  /* Fonts */
+  --font-poppins: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Antd */
+
+/* Modal (Delete) */
+.custom-delete-modal {
+  .ant-modal-content {
+    background-color: #fefefe;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .ant-modal-header {
+    background: transparent;
+    border-bottom: none;
+  }
+
+  .ant-modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d11a2a;
+  }
+
+  .ant-modal-body {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .ant-btn-primary {
+      background-color: #d11a2a;
+      border-color: #d11a2a;
+
+      &:hover {
+        background-color: #b31022;
+        border-color: #b31022;
+      }
+    }
+
+    .ant-btn-default {
+      color: #333;
+    }
+  }
+}
